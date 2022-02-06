@@ -1,0 +1,318 @@
+    /* Estilos Globales */
+    
+    body {
+        font-family: 'Prompt', sans-serif;
+        margin: 0 auto;
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: auto;
+    }
+    
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .contenedor {
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+    /* header  */
+    
+    .cabecera {
+        height: 10vh;
+        margin: 3rem 5rem;
+    }
+    
+    .cabecera .logo {
+        float: left;
+    }
+    
+    .boton-header a {
+        float: right;
+        border: 1px solid #fd53c0;
+        padding: 0.2rem 2rem;
+        border-radius: 1.2rem;
+        color: #fd53c0;
+    }
+    
+    .boton-header a:hover {
+        background-color: #fae9f4;
+    }
+    
+    .seccion-principal {
+        text-align: center;
+        padding-top: 4rem;
+    }
+    
+    .seccion-principal h1 {
+        font-size: 2.2rem;
+        padding: 0 4rem;
+        margin-bottom: 2rem;
+    }
+    
+    .seccion-principal p {
+        padding-top: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    
+    .seccion-principal .boton {
+        background-color: #fd53c0;
+        color: #ffffff;
+        padding: 1rem 5rem;
+        border-radius: 2rem;
+    }
+    
+    .hero {
+        margin-top: 8rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .hero img {
+        width: 70%;
+    }
+    
+    .metricas {
+        display: flex;
+        margin-top: 4rem;
+    }
+    
+    .metricas .comunidad img {
+        margin-left: 0;
+    }
+    
+    .metricas .comunidad .numeros {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    
+    .metricas .comunidad .descripcion-metrica {
+        color: #999999;
+    }
+    
+    @media (max-width: 768px) {
+        .cabecera {
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem 2rem 3rem 1rem;
+        }
+        .cabecera .logo {
+            margin: 0;
+        }
+        .cabecera .logo img {
+            margin: 0;
+            width: 80%;
+        }
+        .seccion-principal p {
+            padding: 0 2rem;
+        }
+        .metricas {
+            display: flex;
+            flex-direction: column;
+            margin-top: 8rem;
+        }
+        .metricas .comunidad .descripcion-metrica {
+            padding-bottom: 5rem;
+        }
+    }
+    /* secciones */
+    
+    .secciones {
+        margin-top: 10rem;
+    }
+    
+    .seccion-1 {
+        background-color: #f6fbff;
+        display: flex;
+        justify-content: space-between;
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr); */
+        padding: 0 4rem;
+    }
+    
+    .invertido {
+        background-color: #ffffff;
+        flex-direction: row-reverse;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    
+    .seccion-1 .descripcion {
+        width: 100%;
+    }
+    
+    .seccion-1 .image {
+        max-width: 70%;
+        text-align: center;
+    }
+    
+    .seccion-1 .image img {
+        width: 100%;
+    }
+    
+    .seccion-1 .descripcion h2 {
+        font-size: 1.9rem;
+        padding-left: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    .seccion-1 .descripcion p {
+        padding-left: 1.2rem;
+        padding-right: 3rem;
+    }
+    
+    @media (max-width: 768px) {
+        .seccion-1 {
+            display: flex;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            justify-content: center;
+            text-align: center;
+            max-width: 100%;
+        }
+        .seccion-1 .image {
+            text-align: center;
+        }
+        .seccion-1 .image img {
+            width: 75%;
+        }
+        .seccion-1 .descripcion {
+            margin-top: 2rem;
+        }
+    }
+    
+    .final {
+        margin-top: 7rem;
+        text-align: center;
+    }
+    
+    .final h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2.2rem;
+    }
+    
+    .final .boton {
+        background-color: #fd53c0;
+        color: #ffffff;
+        padding: 1rem 5rem;
+        border-radius: 2rem;
+    }
+    
+    .imagen-footer {
+        margin-top: 8rem;
+    }
+    
+    .imagen-footer img {
+        width: 100%;
+    }
+    
+    footer {
+        background-color: #01262f;
+        margin: 0 auto;
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+        padding: 3rem 3rem 0 3rem;
+    }
+    
+    .seccion-footer .logo-empresa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr 2fr);
+        padding: 2rem 0 1rem 0;
+    }
+    
+    .seccion-footer .logo-empresa h2 {
+        font-size: 2.5rem;
+        color: #ffffff;
+    }
+    
+    .seccion-footer .logo-empresa img {
+        width: 2.2rem;
+    }
+    
+    .seccion-footer p {
+        color: #ffffff;
+        padding: 1rem;
+    }
+    
+    .seccion-footer .primer li {
+        list-style: none;
+        color: #ffffff
+    }
+    
+    .seccion-footer .primer {
+        padding: 0 1rem 0.5rem;
+    }
+    
+    .seccion-footer .primer img {
+        float: left;
+        margin-right: 1.2rem;
+        margin-top: 0.3rem;
+    }
+    
+    .seccion-footer .newsletter {
+        font-size: 2rem;
+        color: #ffffff;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .seccion-footer .input {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .seccion-footer .input input {
+        height: 2.5rem;
+        width: 14rem;
+        border: 1px solid #000;
+        border-radius: 0.5rem;
+    }
+    
+    .seccion-footer .input a {
+        background-color: #fd53c0;
+        color: #ffffff;
+        margin-left: 0.8rem;
+        font-size: 1rem;
+        padding: 0.4rem 2rem;
+        border-radius: 0.5rem;
+        border: 1px solid #000;
+    }
+    /* redes sociales */
+    
+    .redes-sociales {
+        padding-top: 3rem;
+        padding-left: 4rem;
+        padding-bottom: 4rem;
+    }
+    
+    .redes-sociales a {
+        padding-left: 1rem;
+    }
+    
+    .redes-sociales a img {
+        background-color: white;
+        display: inline;
+        width: 1.5rem;
+        border-radius: 0.4rem;
+    }
+    /* movil footer */
+    
+    @media (max-width: 768px) {
+        .info {
+            display: flex;
+            flex-direction: column;
+            flex-direction: column-reverse;
+        }
+    }
